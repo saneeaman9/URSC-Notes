@@ -35,7 +35,33 @@
 
 </details>
 <details>
-  <summary>Day 2 + Day 3</summary>
+  <summary>Day 2</summary>
+
+### UART
+
+UART stands for Universal Asynchronous Receiver Transmitter, which is a device or circuit that performs serial communication between different devices. Serial communication means that data is transmitted one bit at a time, as opposed to parallel communication, where multiple bits are transmitted simultaneously. Here are some brief points explaining the UART interface:
+
+
+![1](https://github.com/saneeaman9/URSC-Notes/assets/75088597/aa8892ae-bd0c-4b9d-9f45-b871cbdbe6ce)
+
+![2](https://github.com/saneeaman9/URSC-Notes/assets/75088597/ebd40e99-0974-4ee8-95f1-502311a0aef7)
+
+
+* UART does not use a clock signal to synchronize the transmitter and receiver devices; instead, it relies on the same baud rate (bits per second) and data format (number of data bits, parity bit, and stop bits) for both ends.
+* 
+* UART contains input and output shift registers, which convert parallel data to serial data and vice versa, as well as transmit/receive buffers, which store the data temporarily.
+* 
+* UART also contains control logic that manages the data transmission and reception, such as generating start and stop bits, detecting errors, and handling flow contro.
+* 
+* UART can operate in different modes of communication, such as simplex (one-way), half-duplex (alternating), or full-duplex (two-way).
+* 
+* UART is often integrated in microcontrollers or other devices that need to communicate with external devices, such as sensors, modems, keyboards, etc.
+
+->[ref1](https://www.embedded.com/understanding-the-uart/), [ref2](https://www.circuitbasics.com/basics-uart-communication/), [ref3](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
+
+</details>
+<details>
+  <summary>Day 3</summary>
 
 </details>
 </details>
