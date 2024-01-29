@@ -20,8 +20,7 @@
 
 <details>
   <summary>Week 2</summary>
-
-
+<br/>
 <details>
   <summary>Day 1</summary>
 
@@ -36,5 +35,5 @@
 ](https://www.youtube.com/watch?v=LU9hP7KLDgE&t=452s)
 </details>
 
-
+ -> [FSBL Generation](https://www.css-techhelp.com/post/fsbl-creation-and-source-debug-in-xilinx-vitis-2019-2)
 </details>
