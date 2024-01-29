@@ -59,6 +59,25 @@ UART stands for Universal Asynchronous Receiver Transmitter, which is a device o
 
 ->[ref1](https://www.embedded.com/understanding-the-uart/), [ref2](https://www.circuitbasics.com/basics-uart-communication/), [ref3](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
 
+### SPI
+
+![1](https://github.com/saneeaman9/URSC-Notes/assets/75088597/01b8b40c-eb82-4896-a148-5886bfe03680)
+
+![2](https://github.com/saneeaman9/URSC-Notes/assets/75088597/12e8e0ba-9e40-44d1-a291-9a90999e7a29)
+
+
+* SPI stands for Serial Peripheral Interface, a synchronous serial communication protocol used for short-distance wired communication between integrated circuits.
+  
+* SPI uses a master-slave architecture, where one device acts as the controller and generates the clock signal, and the other devices act as the peripherals and follow the master’s instructions.
+ 
+* SPI requires four wires to connect the master and the slaves: SCLK (serial clock), MOSI (master output, slave input), MISO (master input, slave output), and SS (slave select).
+  
+* SPI can transfer data without interruption, as any number of bits can be sent or received in a continuous stream. This makes SPI faster and more efficient than other protocols that use start and stop conditions to define packets of data.
+  
+* SPI is standard with many variants, so different devices may have different modes, speeds, and formats of data transmission. Therefore, it is important to check the specifications of the devices before using SPi.
+
+-> [ref1](https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/), [ref2](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface).
+
 </details>
 <details>
   <summary>Day 3</summary>
