@@ -1,4 +1,4 @@
-# Sanee URSC-Notes
+# Sanee
 
 # January
 
@@ -31,7 +31,7 @@
 <details>
   <summary>Day 1</summary>
 
-  * Tried to run Hello World on ![ZCU102](https://docs.xilinx.com/v/u/en-US/ug1182-zcu102-eval-bd) evaluation kit.
+  * Tried to run Hello World on [ZCU102](https://docs.xilinx.com/v/u/en-US/ug1182-zcu102-eval-bd) evaluation kit.
 
 </details>
 
