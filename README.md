@@ -13,8 +13,8 @@
 
 * The 7 layers of CNN.
 
-![img 1](![1](https://github.com/saneeaman9/URSC-Notes/assets/75088597/10bde972-90f5-40f4-806a-695e3a7b434e)
-)
+![1](https://github.com/saneeaman9/URSC-Notes/assets/75088597/5ed6e4af-d526-4a43-9339-347de351870f)
+
 
 * Physical layer: This is the lowest layer that deals with the physical transmission of the data bits. It also handles bit synchronization, bit rate control, physical topologies, and transmission modes.
 
