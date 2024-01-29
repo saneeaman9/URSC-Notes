@@ -78,6 +78,30 @@ UART stands for Universal Asynchronous Receiver Transmitter, which is a device o
 
 -> [ref1](https://www.circuitbasics.com/basics-of-the-spi-communication-protocol/), [ref2](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface).
 
+### I2C
+
+I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that allows multiple devices to communicate with each other. It combines the best features of SPI and UART. Here are some key points about I2C.
+
+![1](https://github.com/saneeaman9/URSC-Notes/assets/75088597/06ecfcaf-913a-482e-babd-c50cf07386b4)
+
+![2](https://github.com/saneeaman9/URSC-Notes/assets/75088597/1488c681-f291-429f-b7cf-fc7372c9b851)
+
+
+* I2C uses only two wires to transmit data between devices: SDA (Serial Data) and SCL (Serial Clock).
+  
+* Data is transferred in messages, which are broken up into frames of data. Each message has an address frame that contains the binary address of the slave, and one or more data frames that contain the data being transmitted.
+
+* I2C is synchronous, so the output of bits is synchronized to the sampling of bits by a clock signal shared between the master and the slave. The clock signal is always controlled by the master.
+
+* I2C can connect multiple slaves to a single master or have multiple masters controlling single or multiple slaves.
+
+* I2C doesn't have slave select lines like SPI, so it needs another way to let the slave know that data is being sent to it, and not another slave. It does this by addressing. The address frame is always the first frame after the start bit in a new message. The master sends the address of the slave it wants to communicate with to every slave connected to it. Each slave then compares the address sent from the master to its own address. If the address matches, it sends a low voltage ACK bit back to the master. If the address doesn’t match, the slave does nothing and the SDA line remains high.
+
+![3](https://github.com/saneeaman9/URSC-Notes/assets/75088597/a9bf1e2a-a11f-4c0c-9d67-ef761c53647f)
+
+
+-> [Basics of the I2C Communication Protocol - Circuit Basics.](https://www.circuitbasics.com/basics-of-the-i2c-communication-protocol),  [I2C - SparkFun Learn.](https://learn.sparkfun.com/tutorials/i2c/all),  [What is the I2C Communication Protocol? | CircuitBread.](https://www.circuitbread.com/tutorials/what-is-the-i2c-communication-protocol).
+
 </details>
 <details>
   <summary>Day 3</summary>
