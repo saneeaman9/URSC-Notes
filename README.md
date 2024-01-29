@@ -4,8 +4,7 @@
 
 <details>
   <summary>Week 1</summary>
-
-
+<br/>
 <details>
   <summary>Day 1</summary>
     
@@ -31,10 +30,12 @@
 * Application layer: This is the topmost layer that interacts with the user applications, such as web browsers, email clients, etc. It provides services such as data formatting, encryption, authentication, and file transfer.
 
 
+-> [ref1](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/), [ref2](https://faculty.sfcc.spokane.edu/Rudlock/files/WP_Simoneau_OSIModel.pdf)
+
 
 </details>
 <details>
-  <summary>Day 2</summary>
+  <summary>Day 2 + Day 3</summary>
 
 </details>
 </details>
