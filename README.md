@@ -124,10 +124,25 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
   -> [Hello world video using Xilinx Zynq, Vivado 2020, and Vitis
 ](https://www.youtube.com/watch?v=Mb-cStd4Tqs)
 
-  -> [Xillinx Vitis Introduction| Hello World with Vitis
+  -> [Xilinx Vitis Introduction| Hello World with Vitis
 ](https://www.youtube.com/watch?v=LU9hP7KLDgE&t=452s)
 
  -> [FSBL Generation](https://www.css-techhelp.com/post/fsbl-creation-and-source-debug-in-xilinx-vitis-2019-2)
+</details>
+
+<details>
+  <summary>Day 2</summary>
+
+* Successfully ran "Hello World" on ZCU102 Evaluation board on ARM Cortex A9.
+
+* Referred to [this](https://github.com/saneeaman9/URSC-Notes/blob/main/Week%202/ug1209-embedded-design-tutorial.pdf) manual.
+
+* Also refer to the [ZCU102 Evaluation Board Manual](https://www.xilinx.com/support/documents/boards_and_kits/zcu102/ug1182-zcu102-eval-bd.pdf).
+
+* IO was done using the UART protocol.
+
+* Board was set to JTAG mode.
+
 </details>
 
 
