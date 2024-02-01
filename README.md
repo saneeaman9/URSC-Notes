@@ -162,8 +162,7 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 <details>
   <summary>WEEK 3</summary>        
-
-
+<br>
 <details>
   <summary>Day 1</summary>
 
