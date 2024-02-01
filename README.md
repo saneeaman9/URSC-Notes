@@ -160,8 +160,6 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 </details>
 
-<br/>
-
 # February
 
 <details>
