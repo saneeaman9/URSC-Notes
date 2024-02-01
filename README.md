@@ -135,7 +135,7 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 * Successfully ran "Hello World" on ZCU102 Evaluation board on ARM Cortex A9.
 
-* Referred to [this](https://github.com/saneeaman9/URSC-Notes/blob/main/Week%202/ug1209-embedded-design-tutorial.pdf) manual.
+* Referred to [this](https.://github.com/saneeaman9/URSC-Notes/blob/main/Week%202/ug1209-embedded-design-tutorial.pdf) manual.
 
 * Also refer to the [ZCU102 Evaluation Board Manual](https://www.xilinx.com/support/documents/boards_and_kits/zcu102/ug1182-zcu102-eval-bd.pdf).
 
@@ -144,6 +144,49 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 * Board was set to JTAG mode.
 
 </details>
+
+<details>
+  <summary>Day 3</summary>
+
+* Continued from day 2.
+
+* Tried to install and build petalinux but ran into "sstate cache" errors.
+
+* Install arm sstate cache from [here](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html) 
+
+* Since we do not have an internet connection, follow [this link](https://support.xilinx.com/s/article/Petalinux-offline-build-flow?language=en_US) to build petalinux in offline mode with the sstate cache files you downloaded.
+
+</details>
+
+</details>
+
+<br/>
+
+# February
+
+<details>
+  <summary>WEEK 3</summary>        
+
+
+<details>
+  <summary>Day 1</summary>
+
+* Given tasks: <br/>
+              -> Connect PS & PL with GPIO.<br/>
+              -> Use LEDS and DIP Switches to show PS & PL are connected.<br/>
+              -> Create a waveform(counter) and probe it on an oscilloscope.
+
+* Created a "NAND" gate by programming an "AND" gate on PL and a "NOT" gate on PS then connecting the two.
+
+* Input is done through DIP Switches and Output is on LED.
+
+* Refer to [this playlist](https://www.youtube.com/watch?v=_odNhKOZjEo&list=PLtC_AnOn1Cx9LUfca0HdIBXK9lNFQfEte).
+
+* Find the xdc file for the Zynq ultrascale+ board [here](https://account.amd.com/en/forms/downloads/design-license.html?cid=473474&filename=zcu102-xdc-rdf0405.zip). 
+
+</details>
+
+
 
 
 </details>
