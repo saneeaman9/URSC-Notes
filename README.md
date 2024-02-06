@@ -35,7 +35,7 @@
 
 </details>
 <details>
-  <summary>Day 2</summary>
+<summary>Day 2</summary>
 
 ### UART
 
@@ -158,7 +158,10 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 </details>
 
+<br/>
+
 # February
+
 
 <details>
   <summary>WEEK 3</summary>        
@@ -181,6 +184,109 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 </details>
 
+<details>
+<summary>Day 2</summary>
+
+### Keyboard input through UART
+
+* Tried to get input from keyboard through uart.
+
+* Designed a UART input block and connected it to the zynq processing system.
+
+* Could not complete the task today.
+
+</details>
+
+<details>
+<summary>Day 3 & Day 4</summary>
+
+  ### Building bare metal applications.
+
+  * Tried to connect keyboard directly to the board and take input.
+  * TO do this we need to first build a software for the board using petalinux.
+  * Referred to this source [Create the Software Components with PetaLinux¶](https://xilinx.github.io/Vitis-Tutorials/2021-1/build/html/docs/Vitis_Platform_Creation/Introduction/02-Edge-AI-ZCU104/step2.html)
+
+</details>
+
+</details>
+<br/>
+<details>
+<summary>WEEK 4</summary>
+
+<br>
+
+<details>
+<summary>Day 1 & Day 2</summary>
+
+## Taking Keyboard input through UART and Lighting up LEDs accordingly.
+
+### Step 1
+
+* Create a new block and add the zynq processing system, GPIO block and UartLite blocks.
+
+* Configure the GPIO block(assign it to the LEDs) as shown, uart is default.
+![1](https://github.com/ISRO-Project/Sanee/assets/75088597/3995e500-8fab-430d-9a3b-720e2bd8f48b)
+
+* Run Connection and Block automation.
+
+* Block Diagram
+![2](https://github.com/ISRO-Project/Sanee/assets/75088597/5602405d-e566-434e-95bb-04feea77fc23)
+
+  * Create HDL Wrapper, Generate Bitstream and Export.
+
+### Step 2
+
+* Launch Vitis and create a platform project with the xsa file you got.
+
+* Create a new application project on the platform created.
+
+* Change the [helloworld.c]() file.
+  
+```bash
+#include <stdio.h>
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xuartps.h"
+
+#define LED_GPIO_DEVICE_ID XPAR_AXI_GPIO_0_DEVICE_ID
+#define UART_DEVICE_ID XPAR_PSU_UART_0_DEVICE_ID
+
+int main() {
+    XGpio Gpio;  // GPIO instance for controlling LEDs
+    XUartPs Uart; // UART instance for communication
+    u8 readBuffer[10]; // Buffer to store received UART data
+
+    // Initialize GPIO for LEDs
+    XGpio_Initialize(&Gpio, LED_GPIO_DEVICE_ID);
+    XGpio_SetDataDirection(&Gpio, 1, 0x0); // Set LED GPIO as output
+
+    // Initialize UART
+    XUartPs_Config *UartCfgPtr = XUartPs_LookupConfig(UART_DEVICE_ID);
+    XUartPs_CfgInitialize(&Uart, UartCfgPtr, UartCfgPtr->BaseAddress);
+
+    while (1) {
+        // Receive one byte from UART
+        XUartPs_Recv(&Uart, readBuffer, 1);
+
+        // Check if the received character is a digit between '0' and '7'
+        if (readBuffer[0] >= '0' && readBuffer[0] <= '7') {
+            int ledIndex = readBuffer[0] - '0';
+            // Turn on the corresponding LED using the GPIO
+            XGpio_DiscreteWrite(&Gpio, 1, 1 << ledIndex);
+        }
+    }
+
+    return 0;
+}
+
+```  
+
+* Build and Run the project.
+
+* Corresponding LEDs should light up on pressing 0-7 keys.
+
+* Input is given through com.
+</details>
 
 
 
