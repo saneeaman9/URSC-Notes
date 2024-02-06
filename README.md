@@ -240,7 +240,7 @@ I2C, or Inter-Integrated Circuit, is a **serial communication protocol** that al
 
 * Create a new application project on the platform created.
 
-* Change the [helloworld.c]() file.
+* Change the [helloworld.c](https://github.com/saneeaman9/URSC-Notes/blob/main/Week%204/helloworld.c) file.
   
 ```bash
 #include <stdio.h>
